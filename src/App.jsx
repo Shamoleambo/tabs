@@ -6,11 +6,13 @@ function App() {
     <>
       <h1>My favorite movies</h1>
       <h2>The best list ever is mine of course</h2>
-      <section>
+      <section class='genres-section'>
         <h3>Movie Genre</h3>
-        {DATA.map((datum) => (
-          <MovieGenre key={datum.title} {...datum} />
-        ))}
+        <div className='movie-genres'>
+          {DATA.map((datum) => (
+            <MovieGenre key={datum.title} {...datum} />
+          ))}
+        </div>
       </section>
     </>
   )

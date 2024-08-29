@@ -1,0 +1,30 @@
+:root {
+  margin: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.genres-section {
+  margin: auto;
+  width: 1080px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.movie-genres {
+  display: flex;
+}
+
+.genre {
+  border: 1px solid orange;
+  margin: 6px;
+  padding: 2px;
+  width: 25%;
+}
+
+.genre p {
+  text-align: justify;
+}
