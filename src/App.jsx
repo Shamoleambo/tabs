@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import MovieGenre from './components/MovieGenre'
 import TabButton from './components/TabButton'
-import { GENRE_DATA, MOVIE_DATA } from './data'
 import TabContent from './components/TabContent'
+import { GENRE_DATA, MOVIE_DATA } from './data'
 
 function App() {
   const [tabContent, setTabContent] = useState(null)
@@ -25,14 +25,16 @@ function App() {
         </div>
       </section>
       <section className='movie-reveal-section'>
-        {GENRE_DATA.map((datum) => (
-          <TabButton
-            key={datum.id}
-            content={datum.title}
-            id={datum.id}
-            onClick={handleClick}
-          />
-        ))}
+        <div className='buttons'>
+          {GENRE_DATA.map((datum) => (
+            <TabButton
+              key={datum.id}
+              content={datum.title}
+              id={datum.id}
+              onClick={handleClick}
+            />
+          ))}
+        </div>
         {tabContent}
       </section>
     </>
