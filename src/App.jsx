@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import MovieGenre from './components/MovieGenre'
-import DATA from './data'
+import TabButton from './components/TabButton'
+import { GENRE_DATA, MOVIE_DATA } from './data'
+import TabContent from './components/TabContent'
 
 function App() {
-  const [tabContent, setTabContent] = useState('')
+  const [tabContent, setTabContent] = useState(null)
 
-  function handleClick(title) {
-    console.log(title)
-    setTabContent(title)
+  function handleClick(id) {
+    const movieData = MOVIE_DATA.filter((movie) => movie.id === id)[0]
+    setTabContent(<TabContent {...movieData} />)
   }
 
   return (
@@ -17,16 +19,19 @@ function App() {
       <section className='genres-section'>
         <h3>Movie Genre</h3>
         <div className='movie-genres'>
-          {DATA.map((datum) => (
-            <MovieGenre key={datum.title} {...datum} />
+          {GENRE_DATA.map((datum) => (
+            <MovieGenre key={datum.id} {...datum} />
           ))}
         </div>
       </section>
       <section className='movie-reveal-section'>
-        {DATA.map((datum) => (
-          <button key={datum.title} onClick={() => handleClick(datum.title)}>
-            {datum.title}
-          </button>
+        {GENRE_DATA.map((datum) => (
+          <TabButton
+            key={datum.id}
+            content={datum.title}
+            id={datum.id}
+            onClick={handleClick}
+          />
         ))}
         {tabContent}
       </section>

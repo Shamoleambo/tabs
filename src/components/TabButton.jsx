@@ -1,5 +1,5 @@
-function TabButton({ content }) {
-  return <button>{content}</button>
+function TabButton({ content, id, onClick }) {
+  return <button onClick={() => onClick(id)}>{content}</button>
 }
 
 export default TabButton
