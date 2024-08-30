@@ -28,3 +28,8 @@ h2 {
 .genre p {
   text-align: justify;
 }
+
+.movie-reveal-section {
+  margin: 12px auto;
+  width: 1080px;
+}
