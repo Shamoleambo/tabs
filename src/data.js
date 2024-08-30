@@ -3,23 +3,24 @@ const GENRE_DATA = [
     id: 1,
     title: 'How am I funny?',
     explanation:
-      "I cannot simply go and tell you what the movie is, I have to tease a little bit. Have you ever heard of suspense? Well, I'm sort of a master of suspense in my own way",
+      'Movies are like the mafia: once you are in you cannot get out',
   },
   {
     id: 2,
     title: 'You are a cinefile!',
     explanation:
-      "The things I wanna say I really can't because there are some people who haven't seen it yet.",
+      'A movie from my childhood and it holds up cross generations of kids',
   },
   {
     id: 3,
-    title: 'Think Charlie think',
-    explanation: 'You can fart it!',
+    title: "Here's a scary Movie!",
+    explanation:
+      "Simply the best horror movie there is I don't care what your opinion is",
   },
   {
     id: 4,
-    title: 'Think Dude think',
-    explanation: 'You can fart it!',
+    title: 'Fellowship of movies',
+    explanation: 'This one is easy to guess and enjoy',
   },
 ]
 
@@ -27,26 +28,30 @@ const MOVIE_DATA = [
   {
     id: 1,
     title: 'The Goodfellas',
-    imageSource: 'src',
-    explanation: 'Movie Funny',
+    imageSource: '../assets/goodfellas.png',
+    explanation:
+      'The story of Henry Hill and his life in the mafia, covering his relationship with his wife Karen and his mob partners Jimmy Conway and Tommy DeVito.',
   },
   {
     id: 2,
     title: 'Toy Story',
-    imageSource: 'src',
-    explanation: 'Moving around',
+    imageSource: '../assets/toy-story.png',
+    explanation:
+      "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's bedroom.",
   },
   {
     id: 3,
     title: 'The Shining',
-    imageSource: 'src',
-    explanation: "Here's Johnny!",
+    imageSource: '../assets/shining.png',
+    explanation:
+      'A family heads to an isolated hotel for the winter, where a sinister presence influences the father into violence. At the same time, his psychic son sees horrifying forebodings from both the past and the future.',
   },
   {
     id: 4,
     title: 'Lord of the Rings: The Fellowship of the Ring',
-    imageSource: 'src',
-    explanation: 'I am going to Mordor alone',
+    imageSource: '../assets/lotr.png',
+    explanation:
+      'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.',
   },
 ]
 
